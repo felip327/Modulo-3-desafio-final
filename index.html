@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Armadura de Ouro - Santuário</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars"></div>
+
+    <div class="container">
+        <div class="header-santuario">
+            <h1 class="titulo">Descubra sua Armadura</h1>
+            <p class="subtitulo">Insira sua data de nascimento e desperte o seu Sétimo Sentido.</p>
+        </div>
+        
+        <div class="input-group">
+            <input type="date" id="dataNascimento" required>
+            <button onclick="descobrirCavaleiro()">Despertar Cosmo</button>
+        </div>
+        
+        <div id="resultado" class="escondido">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

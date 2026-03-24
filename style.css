@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #e0e0e0;
+    overflow: hidden; 
+}
+
+.stars {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat top center;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.container {
+    background: rgba(15, 15, 20, 0.85); 
+    backdrop-filter: blur(10px);
+    padding: 40px 30px;
+    border-radius: 15px;
+    border: 1px solid #d4af37; 
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.15), inset 0 0 20px rgba(212, 175, 55, 0.05);
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    position: relative;
+}
+
+.header-santuario {
+    margin-bottom: 30px;
+}
+
+.titulo {
+    font-family: 'Cinzel', serif; 
+    color: #ffd700;
+    margin-bottom: 10px;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+    letter-spacing: 2px;
+}
+
+.subtitulo {
+    font-size: 15px;
+    color: #a0a0b0;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 14px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #ffd700;
+    outline: none;
+    transition: all 0.3s ease;
+    color-scheme: dark; 
+}
+
+input[type="date"]:focus {
+    border-color: #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+button {
+    width: 100%;
+    background: linear-gradient(135deg, #b8860b, #ffd700, #b8860b);
+    background-size: 200% 200%;
+    color: #111;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-position: 100% 50%;
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+    color: #000;
+}
+
+.escondido {
+    display: none;
+}
+
+#resultado {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    animation: aparecer 0.8s ease-out;
+}
+
+.nome-cavaleiro {
+    font-family: 'Cinzel', serif;
+    color: #ffd700;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    letter-spacing: 2px;
+}
+
+.descricao {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 3px solid #d4af37;
+    text-align: left;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
