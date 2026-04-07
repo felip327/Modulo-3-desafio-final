@@ -138,6 +138,16 @@ button:hover {
     text-align: left;
 }
 
+.imagem-cavaleiro {
+    width: 100%;
+    max-width: 250px; /* Controla o tamanho máximo da imagem */
+    height: auto;
+    border-radius: 8px; /* Mantém o padrão arredondado do seu design */
+    margin: 10px 0 20px 0; /* Dá um respiro entre o título e o texto */
+    border: 2px solid #d4af37; /* Borda dourada combinando com o tema */
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3); /* Brilho dourado */
+}
+
 @keyframes aparecer {
     from {
         opacity: 0;
